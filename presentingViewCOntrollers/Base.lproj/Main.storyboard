@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILT-hU-n2c">
-                                <rect key="frame" x="164" y="387" width="155" height="30"/>
+                                <rect key="frame" x="110" y="32" width="155" height="30"/>
                                 <state key="normal" title="Dismiss this "/>
                                 <connections>
                                     <action selector="dismiss:" destination="Udr-A0-H98" eventType="touchUpInside" id="2YH-GW-kpf"/>
@@ -27,9 +27,9 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ILT-hU-n2c" firstAttribute="centerX" secondItem="see-R0-ODL" secondAttribute="centerX" constant="54" id="PPK-9G-n9S"/>
-                            <constraint firstItem="ILT-hU-n2c" firstAttribute="leading" secondItem="CA8-sZ-Wo0" secondAttribute="leading" constant="164" id="xHa-wh-0ly"/>
-                            <constraint firstItem="ILT-hU-n2c" firstAttribute="top" secondItem="CA8-sZ-Wo0" secondAttribute="top" constant="367" id="zXp-C5-dUq"/>
+                            <constraint firstItem="ILT-hU-n2c" firstAttribute="centerX" secondItem="see-R0-ODL" secondAttribute="centerX" id="PPK-9G-n9S"/>
+                            <constraint firstItem="ILT-hU-n2c" firstAttribute="leading" secondItem="CA8-sZ-Wo0" secondAttribute="leading" constant="110" id="xHa-wh-0ly"/>
+                            <constraint firstItem="ILT-hU-n2c" firstAttribute="top" secondItem="CA8-sZ-Wo0" secondAttribute="top" constant="12" id="zXp-C5-dUq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CA8-sZ-Wo0"/>
                     </view>
@@ -66,6 +66,13 @@
                                     <action selector="clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rOf-bK-do0"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gx8-JF-E2H">
+                                <rect key="frame" x="129" y="96" width="117" height="30"/>
+                                <state key="normal" title="present pop over"/>
+                                <connections>
+                                    <action selector="popover:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S94-ET-luV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -76,7 +83,9 @@
                             <constraint firstItem="X4a-fJ-6qO" firstAttribute="centerX" secondItem="a1K-bC-mLQ" secondAttribute="centerX" id="UIv-Fh-qz8"/>
                             <constraint firstItem="a1K-bC-mLQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="Ujq-0y-i2p"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xUK-8U-c0t" secondAttribute="trailing" constant="37" id="Vhe-v0-Yum"/>
+                            <constraint firstItem="gx8-JF-E2H" firstAttribute="top" secondItem="X4a-fJ-6qO" secondAttribute="bottom" constant="8" symbolic="YES" id="d9s-lM-RhD"/>
                             <constraint firstItem="a1K-bC-mLQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gwF-cK-LaE"/>
+                            <constraint firstItem="gx8-JF-E2H" firstAttribute="centerX" secondItem="X4a-fJ-6qO" secondAttribute="centerX" id="qJE-YJ-s0T"/>
                             <constraint firstItem="xUK-8U-c0t" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="379" id="zRu-zV-ClV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -104,6 +113,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.26872825649999998" blue="0.85630173730000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="7i6-AQ-nxm"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZEw-zH-Bnd" userLabel="First Responder" sceneMemberID="firstResponder"/>

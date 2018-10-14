@@ -10,9 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func popover(_ sender: UIButton) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "presented");
+        vc?.modalPresentationStyle = .popover
+        
+        present(vc!, animated: true);
+
+    }
     @IBAction func fullScreen(_ sender: UIButton) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "presented");
         vc?.modalPresentationStyle = .overFullScreen
+        
         present(vc!, animated: true);
 
     }
