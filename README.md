@@ -16,7 +16,11 @@ Now click on `present over full screen` the view hierarchy is:
 
 `UIWindow -> View Controller and its sub views` and under the same UIWindow you will also see:
 
-` -> UITransitionView -> presented View Controller`
+` -> UITransitionView -> presented View Controller`. 
+
+As you can see in this case window maintains a reference to both presented and presenting view controller. UITransitioView is used as a wrapper around presented view controller in both cases. 
+
+Now click on `present pop over`. In a compact environmenrt you should see it occupy the full screen and in regular environment it appears as a popup.
 
 
 
