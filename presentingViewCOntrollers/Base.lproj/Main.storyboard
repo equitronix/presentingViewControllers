@@ -47,7 +47,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xUK-8U-c0t">
-                                <rect key="frame" x="98" y="379" width="240" height="128"/>
+                                <rect key="frame" x="0.0" y="196" width="375" height="471"/>
                                 <connections>
                                     <segue destination="P2U-PK-mAa" kind="embed" id="9N2-XV-QXa"/>
                                 </connections>
@@ -76,17 +76,17 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xUK-8U-c0t" secondAttribute="bottom" constant="160" id="CcM-kk-Rfr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xUK-8U-c0t" secondAttribute="bottom" id="CcM-kk-Rfr"/>
                             <constraint firstItem="X4a-fJ-6qO" firstAttribute="top" secondItem="a1K-bC-mLQ" secondAttribute="bottom" constant="8" symbolic="YES" id="F9M-Ip-Rga"/>
-                            <constraint firstItem="xUK-8U-c0t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="98" id="Gyy-y2-ww7"/>
+                            <constraint firstItem="xUK-8U-c0t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Gyy-y2-ww7"/>
                             <constraint firstItem="a1K-bC-mLQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MtF-YQ-gc7"/>
                             <constraint firstItem="X4a-fJ-6qO" firstAttribute="centerX" secondItem="a1K-bC-mLQ" secondAttribute="centerX" id="UIv-Fh-qz8"/>
                             <constraint firstItem="a1K-bC-mLQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="Ujq-0y-i2p"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xUK-8U-c0t" secondAttribute="trailing" constant="37" id="Vhe-v0-Yum"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xUK-8U-c0t" secondAttribute="trailing" id="Vhe-v0-Yum"/>
                             <constraint firstItem="gx8-JF-E2H" firstAttribute="top" secondItem="X4a-fJ-6qO" secondAttribute="bottom" constant="8" symbolic="YES" id="d9s-lM-RhD"/>
                             <constraint firstItem="a1K-bC-mLQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gwF-cK-LaE"/>
                             <constraint firstItem="gx8-JF-E2H" firstAttribute="centerX" secondItem="X4a-fJ-6qO" secondAttribute="centerX" id="qJE-YJ-s0T"/>
-                            <constraint firstItem="xUK-8U-c0t" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="379" id="zRu-zV-ClV"/>
+                            <constraint firstItem="xUK-8U-c0t" firstAttribute="top" secondItem="gx8-JF-E2H" secondAttribute="top" constant="100" id="zRu-zV-ClV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -100,7 +100,7 @@
             <objects>
                 <viewController id="P2U-PK-mAa" customClass="SmallContainerViewController" customModule="presentingViewCOntrollers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ej9-e4-bso">
-                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="471"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNN-mq-H1I">
